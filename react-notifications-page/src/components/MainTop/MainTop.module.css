@@ -1,0 +1,95 @@
+.image {
+    max-width: 2.43rem;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: .81rem;
+}
+
+.containerBackground {
+    background: #F7FAFD;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 8px;
+}
+
+.lastContainer {
+    background: none;
+    padding: 0 0 0 1rem;
+    margin-top: 1rem;
+}
+
+main {
+    margin-top: 1.5rem;
+    padding: 0 1rem 2.81rem 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: .62rem;
+}
+
+.name {
+    font-weight: 800;
+    color: #1C202B;
+}
+
+.name:hover {
+    color: #0A327B;
+}
+
+.name,
+.strongText {
+    text-decoration: none;
+}
+
+.notificationParagraph,
+.timeAgo,
+.privateMessage {
+    font-size: .93rem;
+}
+
+.notificationInfo,
+.strongText,
+.privateMessage {
+    color: #5E6778;
+}
+
+.strongText:hover {
+    color: #0A327B;
+}
+
+.notificationInfo,
+.privateMessage {
+    font-weight: 500;
+}
+
+.strongText {
+    font-weight: 700;
+}
+
+.timeAgo {
+    color: #939CAD;
+    font-weight: 500;
+    margin: .18rem 0 .75rem 0;
+}
+
+.privateMessageBackground {
+    background: #FFF;
+    border: 1px solid #DDE7EE;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.privateMessageBackground:hover {
+    background: #DDE7EE;
+}
+
+.notificationIcon {
+    margin-left: .43rem;
+}

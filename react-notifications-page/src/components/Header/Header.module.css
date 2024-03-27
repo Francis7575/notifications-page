@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 0 1rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+.notificationInfo {
+    display: flex;
+    align-items: center;
+    gap: .56rem;
+}
+
+#button {
+    background: none;
+    border: none;
+    font-size: .87rem;
+    font-weight: 500;
+    color: #5E6778;
+    cursor: pointer;
+}
+
+#button:hover {
+    color: #0A327B;
+}
+
+.notificationsBackground {
+    background: #0A327B;
+    padding: .25rem .68rem;
+    border-radius: 6px;
+}
+
+.notificationsCounter {
+    color: #fff;
+    font-weight: 800;
+}
