@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.62rem;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: .81rem;
+}
+
+.column {
+    margin-right: 2.8rem;
+}
+
+.strongText {
+    color: #5E6778;
+}
+
+.chessClubText {
+    color: #0A327B;
+}
+
+.chessClubText,
+.strongText {
+    font-size: .87rem;
+    font-weight: 700;
+}
+
+.kimberlyContainer {
+    margin-top: 2.62rem;
+}
