@@ -45,7 +45,7 @@ const notifications: Props[] = [
     }
 ]
 
-const MainTopProps: React.FC<{ notification: Props; showIcon: boolean }> = ({ notification, showIcon }) => {
+const MainTopProps: React.FC<{ notification: Props, iconVisibility: boolean }> = ({ notification, iconVisibility }) => {
     return (
         <div className={styles.container}>
             <a href="#">
@@ -63,7 +63,7 @@ const MainTopProps: React.FC<{ notification: Props; showIcon: boolean }> = ({ no
                                 style.chessClubText : ''}`}>
                         {notification.strongText}
                     </a>
-                    <span>{showIcon && <img src={svg}
+                    <span>{iconVisibility && <img src={svg}
                         alt="Notification icon"
                         className={styles.notificationIcon} />}
                     </span>
@@ -76,7 +76,7 @@ const MainTopProps: React.FC<{ notification: Props; showIcon: boolean }> = ({ no
                     </a>
                 )}
             </div>
-        </div>
+        </div >
     )
 }
 

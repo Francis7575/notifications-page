@@ -15,6 +15,10 @@
     border-radius: 8px;
 }
 
+.hidden {
+    background: none;
+}
+
 .lastContainer {
     background: none;
     padding: 0 0 0 1rem;
@@ -23,7 +27,6 @@
 
 main {
     margin-top: 1.5rem;
-    padding: 0 1rem 2.81rem 1rem;
 }
 
 .section {
@@ -92,4 +95,28 @@ main {
 
 .notificationIcon {
     margin-left: .43rem;
+    vertical-align: middle;
+}
+
+@media (min-width: 64em) {
+    .notificationParagraph {
+        font-size: 1rem;
+    }
+
+    .timeAgo {
+        font-size: 1rem;
+    }
+
+    .privateMessage {
+        font-size: 1rem;
+        max-width: 32.87rem;
+    }
+
+    .image {
+        max-width: 2.81rem;
+    }
+
+    main {
+        margin-top: 2.25rem;
+    }
 }

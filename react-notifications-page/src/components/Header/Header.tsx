@@ -1,6 +1,12 @@
 import styles from './Header.module.css'
 
-const Header = () => {
+type HeaderProps = {
+    onMarkAllAsRead: () => void;
+    numberOfNotifications: number
+}
+
+const Header = ({ onMarkAllAsRead, numberOfNotifications }: HeaderProps) => {
+
     return (
         <>
             <header>
@@ -8,10 +14,10 @@ const Header = () => {
                     <div className={styles.notificationInfo}>
                         <h1>Notifications</h1>
                         <div className={styles.notificationsBackground}>
-                            <span className={styles.notificationsCounter}>3</span>
+                            <span className={styles.notificationsCounter}>{numberOfNotifications}</span>
                         </div>
                     </div>
-                    <button id={styles.button}>Mark all as read</button>
+                    <button id={styles.button} onClick={onMarkAllAsRead}>Mark all as read</button>
                 </div>
             </header>
         </>
